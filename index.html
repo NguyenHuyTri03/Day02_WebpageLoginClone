@@ -1,49 +1,71 @@
 <html>
     <head>
         <title>Login | Minecraft</title>
+        <link rel="icon" href="Style/SmallLogo.png" type="image/x-icon"/>
         <link rel = "stylesheet" href = "Style/style.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700;800;900&family=Noto+Serif&display=swap" rel="stylesheet">
     </head>
+
+    
     <body>
-        <script src="numberGuess.js"></script>
-        <input  type="button" value="number guessing" onclick="btnClick();"/>
-        <p id="textDemo"></p>
-        
-        <style>
-            body{
-                background-image: url('Style/mcWall.jpg');
-            }
-        </style>
+        <div class="topMini">
+            <input  id="btnTopLogin" type="button" onclick="window.location.href='http://127.0.0.1:5500';" value="LOGIN"/>
+            <input  id="btnTopRedeem" type="button" onclick="window.location.href='https://www.minecraft.net/en-us/redeem';" value="REDEEM"/>
+        </div>
+
+
         <div class = "topRibbon">
-            <img src="Style/mcTitle.png"/>
+            <img src="Style/mcTitle.png" onclick="window.location.href='https://www.minecraft.net/en-us';"/>
             <div class="leftRibbon">
-                <input type = "button" value = "Games"/>
-                <input type = "button" value = "Community"/>
-                <input type = "button" value = "Merch"/>
-                <input type = "button" value = "Support"/>
+                <input type = "button" value = "GAMES"/>
+                <input type = "button" value = "COMMUNITY"/>
+                <input type = "button" value = "MERCH"/>
+                <input type = "button" value = "SUPPORT"/>
             </div>
 
             <div class="rightRibbon">
-                <input type = "button" value = "Get Minecraft"/>
+                <input type = "button" onclick="window.location.href='https://www.minecraft.net/en-us/get-minecraft';" value = "GET MINECRAFT"/>
             </div>
         </div>
 
+
         <div class = "loginWin">
             <h1><b>LOGIN</b></h1>
-
             <div id="microsoftLogin">
                 <input id="mcLogInBtn" type="button" value = "Sign in with Microsoft"/>
-                <p >No Microsoft account?</p>
-                <input id="mcCreateBtn" type="button" value="Sign up for free"/>
+                <p>No Microsoft account?</p>
+                <input id="mcCreateBtn" onclick="window.location.href='https://signup.live.com/signup?ru=https%3a%2f%2flogin.live.com%2foauth20_authorize.srf%3flc%3d1033%26redirect_uri%3dhttps%3a%2f%2fsisu.xboxlive.com%2fconnect%2foauth%2fXboxLive%26response_type%3dcode%26state%3dLAAAAAEB2TcOP-kLXDIodbMniln115SJzP1O5zpPcyQKrvIqhdKslwBPZ1kQYTUzOWMzNDc3M2Q0NGZmNGI0MDZiNzVlMjQzYmQ2NzIy%26client_id%3d000000004420578E%26scope%3dXboxLive.Signin%26lw%3d1%26fl%3ddob%2ceasi2%26xsup%3d1%26cobrandid%3d8058f65d-ce06-4c30-9559-473c9275a65d%26nopa%3d2%26mkt%3dEN-US%26uaid%3d97d265d6f3c04a6bbfd223eece4dd98a%26contextid%3d7645279F3D6B1431%26mssupv%3d1&mkt=EN-US&uiflavor=web&lw=1&fl=dob%2ceasi2&cobrandid=8058f65d-ce06-4c30-9559-473c9275a65d&client_id=000000004420578E&nopa=2&uaid=97d265d6f3c04a6bbfd223eece4dd98a&suc=000000004420578E&lic=1';" type="button" value="Sign up for free"/>
             </div>
 
             <div id="mojangLogin">
                 <p id="mojangLoginTitle">Still have a Mojang account? Log in here:</p>
                 <p id="emailTitle">Mojang Account(Email): </p>
-                <input id="emailIn" type = "email">
+                <input id="emailIn" type = "email" >
                 <p id="passTitle">Password:</p>
                 <input id="passIn" type = "password">
-                <p id="passForgot"><i></i></p>>
+                <input id="passForgot" type="button" value="Forgot your password?" onclick="window.location.href='https://www.minecraft.net/en-us/forgot-password';"/>
                 <input id="loginBtn" type="button" value="LOG IN"/>
+                
+            </div>
+        </div>
+
+
+        <div class="bottomRibbon">
+            <p>FOLLOW MINECRAFT</p>
+
+            <div id="followIcons">
+                <button id="ytFollow"><img src="Style/youtube.png" onclick="window.location.href='https://www.youtube.com/minecraft';"></button>
+                <button id="inFollow"><img src="Style/instagram.png" onclick="window.location.href='https://www.instagram.com/minecraft/';"></button>
+                <button id="fbFollow"><img src="Style/facebook-app-symbol.png" onclick="window.location.href='https://www.facebook.com/minecraft/';"></button>
+                <button id="twFollow"><img src="Style/twitter.png" onclick="window.location.href='https://twitter.com/Minecraft';"></button>
+                <button id="rdFollow"><img src="Style/reddit.png" onclick="window.location.href='https://www.reddit.com/r/Minecraft/';"></button>
             </div>
         </div>
     </body>

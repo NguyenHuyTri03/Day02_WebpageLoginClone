@@ -1,52 +1,81 @@
 body{
     background-image: url('https://wallpapers.com/images/featured/s2kxfahyg30sob8q.jpg');
+    object-fit: cover;
 }
 
-.topRibbon{
-    background-color: rgb(22, 22, 22);
-    height: 12%;
+
+/* mini login ribbon */
+.topMini{
+    background-color: black;
+    margin: -.4% -0.42% 0 -0.42%;
+    text-align: right;
 }
 
-#textDemo{
+.topMini > input{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13;
+    background-color: black;
+    color: 3C8527;
+    padding-right: 2%;
+    border: 0px;
+}
+
+.topMini > input:hover{
     color: white;
+    cursor: pointer;
+}
+
+
+/* top navigation pane */
+.topRibbon{
+    background-color: 171615;
+    margin: 0% -0.5%;
 }
 
 .topRibbon > img{
-    margin-left: 43%;
+    margin-left: 43.5%;
     margin-top: 20;
 }
 
+.topRibbon > img:hover{
+    cursor: pointer;
+}
+
 .leftRibbon > input{
+    font-family: 'Noto Sans', sans-serif;
     color: white;
     border: 0;
-    font-size: 30;
-    background-color: rgb(22, 22, 22);
+    font-size: 16;
+    background-color: 171615;
     margin-left: 1%;
-    margin-top: -4%;
+    margin-top: -3.5%;
 }
 
 .rightRibbon > input{
-    background-color: rgb(101, 165, 6);
+    background-color: 3C8527;
     border: 0;
     border-radius: 5px;
     color: white;
-    font-size: 30;
+    font-size: 20;
     text-align: center;
     margin-left: 85%;
     margin-top: -5%;
     padding: 10px 40px;
 }
 
-
 .leftRibbon > input:hover{
-    color:rgb(99, 161, 5);
+    cursor: pointer;
+    color:3C8527;
 }
 
 .rightRibbon > input:hover{
-    background-color: rgb(71, 140, 6);
+    cursor: pointer;
+    background-color: 3C8527;
     text-decoration: underline;
 }
 
+
+/* login pane */
 .loginWin{
     background-color: white;
     text-align: center;
@@ -56,8 +85,10 @@ body{
 }
 
 .loginWin > h1{
-    padding-top: 15;
-    padding-bottom: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25;
+    padding-top: 4%;
+    margin-bottom: -2%;
 }
 
 #microsoftLogin{
@@ -65,83 +96,181 @@ body{
 }
 
 #mcLogInBtn{
-    border-radius: 6px;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 20;
     color: white;
-    background-color: rgb(101, 165, 6);
+    background-color: 3C8527;
+    width: 100%;
     padding: 10 40;
 }
 
-#microSoftLogin > p{
-    text-align: left;
-    margin-left: 14%;
-}
-
 #mcLogInBtn:hover{
+    cursor: pointer;
     background-color: gray;
 }
 
+#microSoftLogin > p{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: left;
+    margin-left: 9%;
+}
+
 #mcCreateBtn{
+    font-family: 'Noto Sans', sans-serif;
     background-color: white;
-    color: rgb(101, 165, 6);
-    font-size: 14;
+    text-decoration: underline;
+    color: 3C8527;
+    font-size: 15;
     border: 0;
-    margin-left: 40%;
-    margin-top: -11%;
+    margin-left: 45%;
+    margin-top: -12%;
 }
 
 #mcCreateBtn:hover{
+    cursor: pointer;
     background-color: black;
     color: white;
     text-decoration: underline;
 }
 
 #mojangLoginTitle{
-    font-size: 20;
-    padding: 2;
-    padding-bottom: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18;
+    margin-top: -.6%;
 }
 
 #emailTitle{
-    font-size: 18;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16;
     text-align: left;
     margin: 10 0;
-    margin-left: 53;
+    margin-left: 30;
 }
 
 #emailIn{
-    margin: 1 10;
-    padding: 7 60;
+    text-align: left;
+    width: 87%;
+    height: 6%;
 }
 
 #passTitle{
-    font-size: 18;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16;
     text-align: left;
     margin: 10 0;
-    margin-left: 53;
-    
+    margin-left: 30;
 }
 
 #passIn{
     margin: 1 10;
-    padding: 7 60;
+    width: 87%;
+    height: 6%;
 }
 
 #passForgot{
+    color: 3C8527;
     font-size: 17;
-    text-align: right;
-    margin-right: 50
+    text-decoration: underline;
+    border: 0;
+    background-color: white;
+    margin: 3% -20% 5% 20%;
+}
+
+#passForgot:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
 }
 
 #loginBtn{
+    font-family: 'Noto Sans', sans-serif;
     background-color:gray;
     color: white;
     font-size: 20;
     border: 0;
-    border-radius: 5px;
-    padding: 3% 30%;
+    width: 90%;
+    padding: 10 40;
 }
 
 #loginBtn:hover{
+    cursor: pointer;
     background-color: rgb(78, 78, 78);
+    transition-timing-function: ease-in-out;
+}
+
+
+
+/* Follow pane */
+.bottomRibbon{
+    background-color: black;
+    text-align: center;
+    padding-bottom: 10%;
+    margin: 0 -0.42%;
+}
+
+.bottomRibbon > p{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 20;
+    padding-top: 1%;
+}
+
+#ytFollow{
+    background-color: rgb(177, 177, 177);
+    border: 0;
+    border-radius: 50%;
+    margin-top: .7%;
+}
+
+#inFollow{
+    background-color: rgb(177, 177, 177);
+    border: 0;
+    border-radius: 50%;
+    margin-left: 4%;
+}
+
+#fbFollow{
+    background-color: rgb(177, 177, 177);
+    border: 0;
+    border-radius: 50%;
+    margin-left: 4%;
+}
+
+#twFollow{
+    background-color: rgb(177, 177, 177);
+    border: 0;
+    border-radius: 50%;
+    margin-left: 4%;
+}
+
+#rdFollow{
+    background-color: rgb(177, 177, 177);
+    border: 0;
+    border-radius: 50%;
+    margin-left: 4%;
+}
+
+#ytFollow:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#inFollow:hover{
+    cursor: pointer;
+    background-color: pink;
+}
+
+#fbFollow:hover{
+    cursor: pointer;
+    background-color: rgb(0, 153, 255);
+}
+
+#twFollow:hover{
+    cursor: pointer;
+    background-color: 1BB1E4;
+}
+
+#rdFollow:hover{
+    cursor: pointer;
+    background-color: rgb(255, 115, 0);
 }
