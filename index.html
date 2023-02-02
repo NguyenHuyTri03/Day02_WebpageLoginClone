@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Login | Minecraft</title>
+        <link rel = "stylesheet" href = "Style/style.css">
+    </head>
+    <body>
+        <script src="numberGuess.js"></script>
+        <input  type="button" value="number guessing" onclick="btnClick();"/>
+        <p id="textDemo"></p>
+        
+        <style>
+            body{
+                background-image: url('Style/mcWall.jpg');
+            }
+        </style>
+        <div class = "topRibbon">
+            <img src="Style/mcTitle.png"/>
+            <div class="leftRibbon">
+                <input type = "button" value = "Games"/>
+                <input type = "button" value = "Community"/>
+                <input type = "button" value = "Merch"/>
+                <input type = "button" value = "Support"/>
+            </div>
+
+            <div class="rightRibbon">
+                <input type = "button" value = "Get Minecraft"/>
+            </div>
+        </div>
+
+        <div class = "loginWin">
+            <h1><b>LOGIN</b></h1>
+
+            <div id="microsoftLogin">
+                <input id="mcLogInBtn" type="button" value = "Sign in with Microsoft"/>
+                <p >No Microsoft account?</p>
+                <input id="mcCreateBtn" type="button" value="Sign up for free"/>
+            </div>
+
+            <div id="mojangLogin">
+                <p id="mojangLoginTitle">Still have a Mojang account? Log in here:</p>
+                <p id="emailTitle">Mojang Account(Email): </p>
+                <input id="emailIn" type = "email">
+                <p id="passTitle">Password:</p>
+                <input id="passIn" type = "password">
+                <p id="passForgot"><i></i></p>>
+                <input id="loginBtn" type="button" value="LOG IN"/>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+body{
+    background-image: url('https://wallpapers.com/images/featured/s2kxfahyg30sob8q.jpg');
+}
+
+.topRibbon{
+    background-color: rgb(22, 22, 22);
+    height: 12%;
+}
+
+#textDemo{
+    color: white;
+}
+
+.topRibbon > img{
+    margin-left: 43%;
+    margin-top: 20;
+}
+
+.leftRibbon > input{
+    color: white;
+    border: 0;
+    font-size: 30;
+    background-color: rgb(22, 22, 22);
+    margin-left: 1%;
+    margin-top: -4%;
+}
+
+.rightRibbon > input{
+    background-color: rgb(101, 165, 6);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 30;
+    text-align: center;
+    margin-left: 85%;
+    margin-top: -5%;
+    padding: 10px 40px;
+}
+
+
+.leftRibbon > input:hover{
+    color:rgb(99, 161, 5);
+}
+
+.rightRibbon > input:hover{
+    background-color: rgb(71, 140, 6);
+    text-decoration: underline;
+}
+
+.loginWin{
+    background-color: white;
+    text-align: center;
+    width: 400;
+    height: 540;
+    margin-left: 40%;
+}
+
+.loginWin > h1{
+    padding-top: 15;
+    padding-bottom: 0;
+}
+
+#microsoftLogin{
+    padding: 20;
+}
+
+#mcLogInBtn{
+    border-radius: 6px;
+    font-size: 20;
+    color: white;
+    background-color: rgb(101, 165, 6);
+    padding: 10 40;
+}
+
+#microSoftLogin > p{
+    text-align: left;
+    margin-left: 14%;
+}
+
+#mcLogInBtn:hover{
+    background-color: gray;
+}
+
+#mcCreateBtn{
+    background-color: white;
+    color: rgb(101, 165, 6);
+    font-size: 14;
+    border: 0;
+    margin-left: 40%;
+    margin-top: -11%;
+}
+
+#mcCreateBtn:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+
+#mojangLoginTitle{
+    font-size: 20;
+    padding: 2;
+    padding-bottom: 0;
+}
+
+#emailTitle{
+    font-size: 18;
+    text-align: left;
+    margin: 10 0;
+    margin-left: 53;
+}
+
+#emailIn{
+    margin: 1 10;
+    padding: 7 60;
+}
+
+#passTitle{
+    font-size: 18;
+    text-align: left;
+    margin: 10 0;
+    margin-left: 53;
+    
+}
+
+#passIn{
+    margin: 1 10;
+    padding: 7 60;
+}
+
+#passForgot{
+    font-size: 17;
+    text-align: right;
+    margin-right: 50
+}
+
+#loginBtn{
+    background-color:gray;
+    color: white;
+    font-size: 20;
+    border: 0;
+    border-radius: 5px;
+    padding: 3% 30%;
+}
+
+#loginBtn:hover{
+    background-color: rgb(78, 78, 78);
+}
